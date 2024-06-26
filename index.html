@@ -10,7 +10,7 @@
         body {
             font-family: 'Trebuchet MS', sans-serif;
             display: flex;
-            font-size: small;
+            font-size: large;
             padding: 0;
             height: 100%;
         }
@@ -20,52 +20,61 @@
             height: 100%;
             
         }
+        .black-sidebar {
+            width: 15%;
+            
+            padding: 20px;
+            box-sizing: border-box;
+        }
         .sidebar {
-            width: 40%;
+            width: 25%;
             background-color: #f4f4f4;
-            padding: 10px;
+            padding: 0px;
             box-sizing: border-box;
             text-align: center;
         }
         .sidebar img {
-            margin-top: 0px ;
-            width: 80%;
+            margin-top: 20px ;
+            width: 90%;
             border-radius: 50%;
+            margin-bottom: 20px;
         }
         .sidebar a {
             display: block;
-            margin: 0px ;
+            margin: 15px ;
             text-decoration: none;
             color: #62945b;
-            font-size: x-small;
+            font-size: large;
         }
-
+        .sidebar h2 {
+            color: #0b5b02;
+            font-size: xxx-large;
+        }
+        .sidebar h2 {
+            margin-top: 10px;
+            color: #0b5b02;
+        }
         .content {
-            width: 75%;
-            padding: 50px;
+            margin-top: 0px;
+            width: 45%;
+            padding: 0px;
             box-sizing: border-box;
         }
         .content h2 {
-            margin-top: 0;
+            margin-left: 50px;
+            margin-top: 10px;
             color: #0b5b02;
+            font-size: xxx-large;
         }
-        .sidebar h2 {
-            margin-top: 0;
-            color: #0b5b02;
-        }
-        .content h3 {
-            margin-top: 0;
-            font-size: medium;
-            color: #0b5b02;
-        }
+        
         .content p {
+            margin-left: 50px;
+            font-size: large;
             color: #575555; /* Change the color to your desired paragraph color */
         }
         .content a {
+            
             color: #62945b; /* Change the color to your desired paragraph color */
-        }
-        .underline-link {
-            text-decoration: underline;
         }
         .content ul {
             list-style-type: none; /* Remove default list style */
@@ -78,9 +87,9 @@
             background-color: #f4f4f4;
             color: #62945b;
             font-size: x-small;
-            text-align: right;
-            padding: 1px 0;
-            position: fixed;
+            text-align: center;
+            padding: 0px 0px;
+            position: flex;
             width: 100%;
             bottom: 0;
         }
@@ -88,19 +97,21 @@
 </head>
 <body>
     <div class="container">
+        <div class="black-sidebar"></div>
         <div class="sidebar">
             <h2>Gengyi (Gen) Sun</h2>
             <img src="./image.jpg" alt="Your Photo">
+            <a href="mailto:gengyi.sun@uwaterloo.ca"><i class="fas fa-address-card"></i> gengyi.sun@uwaterloo.ca</a> 
             <a href="https://github.com/sungengyi" target="_blank"><i class="fab fa-github"></i> GitHub</a>
             <a href="https://www.linkedin.com/in/gengyisun/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="https://scholar.google.ca/citations?user=XjhmuCAAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-            <a href="GengyiSunCV_June2024.pdf" target="_blank" class="underline-link"><i class="fas fa-address-card"></i> My CV</a>
+            <a href="GengyiSunCV_June2024.pdf" target="_blank"><i class="fas fa-file-pdf"></i> My CV</a>
             <a>&#x270D My name: 孙耿一</a>
         </div>
         <div class="content">
             <h2>About Me</h2>
             <p>Ph.D. Student in Computer Science at <a href="https://uwaterloo.ca/">University of Waterloo, Canada </a> </p>
-            <p> Email: <a href="mailto:gengyi.sun@uwaterloo.ca"> gengyi.sun@uwaterloo.ca</a> </p>
+            
             <p> I'm currently a Ph.D. student working under the supervision of Professor Shane McIntosh. 
                 I just started my PhD in May 2024, and I am having fun exploring.  
             </p>
@@ -113,7 +124,7 @@
             <ul>
                 <li>
                     <p>
-                        July 2024: I'm going to attend FSE'24 in Brazil to present our paper. 
+                        July 2024: I'm going to attend FSE'24 in Brazil to present our paper and serve as a student volunteer. 
                     </p>
                 </li>
             </ul>
@@ -175,13 +186,18 @@
                     </p>
                 </li>
             </ul>
-        <h3>More About Me</h3>
-        <p>I love my cat 🐱 and rock climbing 🧗. </p>
+        <h2>More About Me</h2>
+        <p>I love my cat 🐱 and rock climbing 🧗. I also like to organize events within our lab, e.g., Christmas secret santa, end-of-year dinner, and the climbing squad.  </p>
+        
+
+        <footer>
+            Last updated: 2024-06-26 --- 
+        </footer>
+
         </div>
         
+        <div class="black-sidebar"></div>
     </div>
-    <footer>
-        Last updated: 2024-06-26 --- 
-    </footer>
+    
 </body>
 </html>
