@@ -3,62 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <title>Gengyi Sun</title>
+    <link rel="icon" href="image.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Trebuchet MS', sans-serif;
             display: flex;
-            margin: 0;
+            font-size: small;
             padding: 0;
+            height: 100%;
         }
         .container {
             display: flex;
             width: 100%;
+            height: 100%;
+            
         }
         .sidebar {
-            width: 25%;
+            width: 40%;
             background-color: #f4f4f4;
-            padding: 20px;
+            padding: 10px;
             box-sizing: border-box;
             text-align: center;
         }
         .sidebar img {
-            width: 100%;
+            margin-top: 10px ;
+            width: 80%;
             border-radius: 50%;
         }
         .sidebar a {
             display: block;
-            margin: 10px 0;
+            margin: 5px ;
             text-decoration: none;
-            color: #333;
+            color: #62945b;
+            font-size: x-small;
         }
+
         .content {
             width: 75%;
-            padding: 20px;
+            padding: 50px;
             box-sizing: border-box;
         }
         .content h2 {
             margin-top: 0;
+            color: #0b5b02;
+        }
+        .sidebar h2 {
+            margin-top: 0;
+            color: #0b5b02;
+        }
+        .content p {
+            color: #575555; /* Change the color to your desired paragraph color */
+        }
+        .content a {
+            color: #62945b; /* Change the color to your desired paragraph color */
+        }
+        .underline-link {
+            text-decoration: underline;
+        }
+        .content ul {
+            list-style-type: none; /* Remove default list style */
+            padding: 0;
+        }
+        .content ul li {
+            margin-bottom: 10px; /* Adjust spacing between list items */
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <img src="path/to/your/photo.jpg" alt="Your Photo">
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=yourid" target="_blank">Google Scholar</a>
+            <h2>Gengyi (Gen) Sun</h2>
+            <img src="./image.jpg" alt="Your Photo">
+            <a href="https://github.com/sungengyi" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/gengyisun/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://scholar.google.ca/citations?user=XjhmuCAAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+            <a href="GengyiSunCV_June2024.pdf" target="_blank" class="underline-link"><i class="fas fa-address-card"></i> My CV</a>
+            <a>&#x270D My name: 孙耿一</a>
         </div>
         <div class="content">
-            <h2>Introduction</h2>
-            <p>Your introduction goes here. Briefly describe yourself, your background, and your interests.</p>
-
-            <h2>Education</h2>
-            <p>List your educational background here. Include degrees, institutions, and years of study.</p>
+            <h2>About Me</h2>
+            <p>Ph.D. Student in Computer Science at <a href="https://uwaterloo.ca/">University of Waterloo, Canada </a> </p>
+            <p> Email: <a href="mailto:gengyi.sun@uwaterloo.ca"> gengyi.sun@uwaterloo.ca</a> </p>
+            <p> I'm currently a Ph.D. student working under the supervision of Professor Shane McIntosh. 
+                I just started my PhD in May 2024, and I am having fun exploring.  
+            </p>
+            <p>
+                Since September 2022, I am collaborating with La Forge, Ubisoft and reporting to Dr. Sarra Habchi. 
+                My research involves experiment and developing software engineering techniques on video games. 
+                I worked on Continuous Integration on video games as part of my master's thesis. 
+            </p>
+            <h2>Recents</h2>
+            <ul>
+                <li>
+                    <p>
+                        July 2024: I'm going to attend FSE'24 in Brazil to present our paper. 
+                    </p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p>
+                        June 2024: I presented our paper at ICSE'24 in Lisbon, Portugal. 
+                    </p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p>
+                        December 2023: 🎓 I graduated! (master of mathematics) 
+                    </p>
+                </li>
+            </ul>
+            
 
             <h2>Publications</h2>
-            <p>Include a list of your publications here. Provide titles, journal names, and publication dates.</p>
+            <ul>
+                <li>
+                    <p>
+                        <strong>
+                            FSE'24: RavenBuild: Context,Relevance, and Dependency Aware Build Outcome Prediction
+                        </strong>
+                        , Gengyi Sun, Sarra Habchi, Shane McIntosh. (<a href="https://rebels.cs.uwaterloo.ca/papers/fse2024_sun.pdf">paper</a>)
+                    </p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p>
+                        <strong>
+                            ICSE'24-SEIP: Code Impact Beyond Disciplinary Boundaries: Constructing a Multidisciplinary Dependency Graph and Analyzing Cross-Boundary Impact
+                        </strong>
+                        , Gengyi Sun, Mehran Meidani, Sarra Habchi, Mathieu Nayrolles, Shane McIntosh. (<a href="https://dl.acm.org/doi/10.1145/3639477.3639726">paper</a>)
+                    </p>
+                </li>
+            </ul>
+            
         </div>
     </div>
 </body>
