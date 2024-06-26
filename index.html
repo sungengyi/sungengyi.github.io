@@ -1,1 +1,65 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .sidebar img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #333;
+        }
+        .content {
+            width: 75%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .content h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="path/to/your/photo.jpg" alt="Your Photo">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=yourid" target="_blank">Google Scholar</a>
+        </div>
+        <div class="content">
+            <h2>Introduction</h2>
+            <p>Your introduction goes here. Briefly describe yourself, your background, and your interests.</p>
+
+            <h2>Education</h2>
+            <p>List your educational background here. Include degrees, institutions, and years of study.</p>
+
+            <h2>Publications</h2>
+            <p>Include a list of your publications here. Provide titles, journal names, and publication dates.</p>
+        </div>
+    </div>
+</body>
+</html>
